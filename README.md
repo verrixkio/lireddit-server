@@ -29,3 +29,11 @@ npx mikro-orm migration:list     # List all executed migrations
 npx mikro-orm migration:pending  # List all pending migrations
 ```
 
+### Graphql
+
+https://graphql.org/
+
+### Apollo
+
+The Apollo platform helps you build, query, and manage a data graph: a unified data layer that enables applications to interact with data from any combination of connected data stores and external APIs.
+
