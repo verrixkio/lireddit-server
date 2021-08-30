@@ -44,7 +44,6 @@ const main = async () => {
     schema: await buildSchema({
       resolvers: [HelloResolver, PostResolver, UserResolver],
       validate: false,
-      credentials: "include",
     }),
     context: ({ req, res }): MyContext => ({ em: orm.em, req, res }),
   });
