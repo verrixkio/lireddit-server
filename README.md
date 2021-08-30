@@ -14,7 +14,6 @@ Sometimes with postgres you wont be able to run migrations so check config `/etc
 
 If there is no config there you can find it on ubunut via: `sudo find / -type f -name pg_hba.conf`
 
-
 ### MikrORM
 
 Data mapping and migrations done with MikrOrm.
@@ -29,11 +28,32 @@ npx mikro-orm migration:list     # List all executed migrations
 npx mikro-orm migration:pending  # List all pending migrations
 ```
 
-### Graphql
+### Tools
 
-https://graphql.org/
+- [Graphql](https://graphql.org/)
 
-### Apollo
+- [Apollo](https://www.apollographql.com/)
 
 The Apollo platform helps you build, query, and manage a data graph: a unified data layer that enables applications to interact with data from any combination of connected data stores and external APIs.
 
+- [Redis](https://redis.io/)
+
+Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker.
+
+### Known Issues
+
+#### Type Declarations
+
+If you are having an issue where VScode doesn't know the type declaration for ` req.session!.userId = user.id;` where it prompts the error `Property 'userId' does not exist on type 'Session & Partial<SessionData>` you will need to add the specific session tags to the express `index.d.ts` file.
+
+```sh
+    interface SessionData {
+        cookie: Cookie;
+        userId: number;
+    }
+```
+
+#### Port Listening Issues
+
+Nodemon is always crashing thinking there is already a port open for hot reloading. Command to kill the port for linux:
+sudo kill -9 `sudo lsof -t -i:4000
