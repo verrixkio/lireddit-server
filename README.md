@@ -6,6 +6,10 @@ I'll be using this stack for start with self however want to address some learni
 
 ## Notes (While following along).
 
+### Mutations
+
+Anytime we want to add a mutation or a query move into `lireddit-web > graphql > {mutation || query}` and paste in the query we make. Then run `yarn gen` which will output our hooks and we can use the hook. The naming convention is based of the name in the graphql file `use{hookname}Mutation`.
+
 ### Postgresql
 
 The command is `sudo -i -u postgres` then you can access the postgres prompt via `psql`. If you cannot do so it's likely that your local db is not up and running. `sudo service postgresql start`. Then `sudo -u postgres psql` should work fine to connect as the admin postgres user.
