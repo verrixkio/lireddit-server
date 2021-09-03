@@ -66,4 +66,6 @@ sudo kill -9 `sudo lsof -t -i:4000
 
 #### [Server Side Rendering](https://medium.com/@baphemot/whats-server-side-rendering-and-do-i-need-it-cb42dc059b38)
 
-Using urql to handle server side rendering of specific components. https://formidable.com/open-source/urql/docs/advanced/server-side-rendering/#nextjs
+Using urql to handle server side rendering of specific components. https://formidable.com/open-source/urql/docs/advanced/server-side-rendering/#nextjs.
+
+When deciding whether or not to SSR rule of thumb to follow is if any information on this page should be crawled by google. If yes then ssr will be the neccessary tool.
