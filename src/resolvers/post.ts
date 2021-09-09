@@ -37,6 +37,9 @@ export class PostResolver {
     @Arg("input") input: PostInput,
     @Ctx() { req }: MyContext
   ): Promise<Post> {
+    if (!req.session.userId) {
+      throw new Error("not authenticated");
+    }
     return Post.create({
       ...input,
       creatorId: req.session.userId,
