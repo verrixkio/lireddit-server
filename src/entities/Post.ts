@@ -1,4 +1,4 @@
-import { Field, Int, ObjectType } from "type-graphql";
+import { Field, FieldResolver, Int, ObjectType, Root } from "type-graphql";
 import {
   BaseEntity,
   Column,
