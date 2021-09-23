@@ -29,7 +29,6 @@ const main = async () => {
     port: 5433,
   });
   await conn.runMigrations();
-
   const app = express();
   const RedisStore = connectRedis(session);
   const redis = new Redis();
