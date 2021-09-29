@@ -18,7 +18,7 @@ Sometimes with postgres you wont be able to run migrations so check config `/etc
 
 If there is no config there you can find it on ubunut via: `sudo find / -type f -name pg_hba.conf`
 
-### MikrORM
+### TypeORM
 
 Data mapping and migrations done with typeORM.
 
