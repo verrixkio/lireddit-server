@@ -36,17 +36,6 @@ Redis is an open source (BSD licensed), in-memory data structure store, used as 
 
 ### Known Issues
 
-#### Type Declarations
-
-If you are having an issue where VScode doesn't know the type declaration for ` req.session!.userId = user.id;` where it prompts the error `Property 'userId' does not exist on type 'Session & Partial<SessionData>` you will need to add the specific session tags to the express `index.d.ts` file.
-
-```sh
-    interface SessionData {
-        cookie: Cookie;
-        userId: number;
-    }
-```
-
 #### Port Listening Issues
 
 Nodemon is always crashing thinking there is already a port open for hot reloading. Command to kill the port for linux:
