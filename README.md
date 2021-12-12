@@ -1,22 +1,37 @@
-# FullStack React GraphQL Typescript Learning
+# FullStack React GraphQL Typescript Boilerplate
 
-This repo is my follow along for the ben awad [video](https://www.youtube.com/watch?v=I6ypD7qv3Z8).
-
-I'll be using this stack for start with self however want to address some learning holes for production grade web application development.
+This repository is boilerplate for starting and creating any new microservice or app. A full javascript family boilerplate that is intended to be used with [boilerplate-web](https://github.com/Prototype-devshop/boilerplate-web).
 
 # Getting Started
 
-`yarn install`
-in a seperate terminal start redis with `redis-server`
-`yarn start`
+- `yarn install` 
+- in a seperate terminal start redis with `redis-server` 
+- `yarn start`
 
-Not in this repository but move to the `boilerplate-web` repository
+- git clone [boilerplate-web](https://github.com/Prototype-devshop/boilerplate-web) in the same directory as `boilerplate-web` 
+- cd to the `boilerplate-web` repository <br />
+```
+project
+│
+└───boilerplate-server
+│   │   file011.txt
+│   │   file012.txt
+│   │
+│   └───subfolder1
+│       │   file111.txt
+│       │   file112.txt
+│       │   ...
+│   
+└───boilerplate-web
+    │   file021.txt
+    │   file022.txt
+```
 
-`yarn install`
-`yarn start`
-Open to localhost:3000
+- `yarn install` 
+- `yarn start` 
+- Open to `localhost:3000`
 
-## Notes (While following along).
+**Note** Make sure postgres is running in the background.
 
 ### Mutations
 
