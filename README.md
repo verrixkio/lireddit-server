@@ -2,7 +2,19 @@
 
 This repo is my follow along for the ben awad [video](https://www.youtube.com/watch?v=I6ypD7qv3Z8).
 
-I'll be using this stack for start with self however want to address some learning hole for production grade web application development.
+I'll be using this stack for start with self however want to address some learning holes for production grade web application development.
+
+# Getting Started
+
+`yarn install`
+in a seperate terminal start redis with `redis-server`
+`yarn start`
+
+Not in this repository but move to the `boilerplate-web` repository
+
+`yarn install`
+`yarn start`
+Open to localhost:3000
 
 ## Notes (While following along).
 
@@ -33,6 +45,8 @@ The Apollo platform helps you build, query, and manage a data graph: a unified d
 - [Redis](https://redis.io/)
 
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker.
+
+- TypeOrm
 
 ### Known Issues
 
